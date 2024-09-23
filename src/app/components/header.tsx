@@ -1,13 +1,12 @@
 "use client"
-
 import { useState, useEffect } from "react";
+import ButtonDarkMode from "./buttonDarkMode";
 
 export default function Header() {
       const [scrollY, setScrollY] = useState(0);
     
       const handleScroll = () => {
         setScrollY(window.scrollY); 
-        console.log(window.scrollY)
       };
     
       useEffect(() => {
@@ -27,6 +26,7 @@ export default function Header() {
                     <li className="cursor-pointer hover:scale-110 transition-transform duration-300 hover:text-PrimaryPurple">Projetos</li>
                     <li className="cursor-pointer hover:scale-110 transition-transform duration-300 hover:text-PrimaryPurple">Contato</li>
                 </ul>
+                <ButtonDarkMode />
             </header>
         </>
     );
