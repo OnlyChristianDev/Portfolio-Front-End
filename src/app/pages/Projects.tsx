@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <>
       <div className='w-full mt-16 h-screen flex flex-col items-center justify-center'>
-        <h1 className="text-5xl font-bold mb-10">
+        <h1 className="text-5xl font-bold mb-10 dark:text-white">
           Meus <span className="text-PrimaryPurple">projetos.</span>
         </h1>
         <div className="w-full max-w-5xl relative">

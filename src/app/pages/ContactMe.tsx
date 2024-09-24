@@ -38,7 +38,7 @@ export default function ContactMe() {
 
     return (
         <div className='w-full mt-16 h-screen flex flex-col items-center justify-center'>
-            <h1 className="text-5xl font-bold mb-10">
+            <h1 className="text-5xl font-bold mb-10 dark:text-white">
                 Entre <span className="text-PrimaryPurple">em contato.</span>
             </h1>
             <div className="flex items-center justify-center gap-10">

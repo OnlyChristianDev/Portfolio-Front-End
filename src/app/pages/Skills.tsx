@@ -10,7 +10,7 @@ export default function Skills(){
     return(
         <>
         <div className="flex flex-col items-center w-full h-[60vh]">
-            <h1 className="text-5xl font-bold">Minhas <span className="text-PrimaryPurple"> habilidades. </span></h1>               
+            <h1 className="text-5xl font-bold dark:text-white">Minhas <span className="text-PrimaryPurple"> habilidades. </span></h1>               
                 <div className="flex gap-8 mt-10">
                     <SkillsIcon iconProp={faHtml5} />
                     <SkillsIcon iconProp={faCss3Alt} />
