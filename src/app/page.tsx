@@ -1,17 +1,16 @@
 import Home from "./pages/Home"
-import Header from "./components/Header"
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects"
 import ContactMe from "./pages/ContactMe";
 
 export default function Main() {
   return (
-    <>
-        <Header />
+    <div>
         <Home />
         <Skills />
         <Projects />
         <ContactMe />
-    </>
+    </div>
+   
   );
 }

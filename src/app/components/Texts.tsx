@@ -15,7 +15,7 @@ export default function Texts({Portugues1, Portugues2} : Props) {
 
   return (
     <div>
-      <h1>{text}<Cursor /></h1>
+      <h1 className='dark:text-white'>{text}<Cursor /></h1>
     </div>
   );
 }
