@@ -39,8 +39,9 @@ export default function Skills() {
     return (
         <Element name="Skills">
             <div ref={ref} className="flex flex-col justify-center items-center w-full h-[100vh]">
+            <div className='sm:w-[90vw] sm:flex sm:justify-center sm:items-center sm:flex-col'>
                 <motion.h1
-                    className="text-5xl font-bold dark:text-white"
+                    className="text-5xl font-bold text-center dark:text-white sm:text-3xl"
                     initial="hidden"
                     animate={isVisible ? "visible" : "hidden"}
                     variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -48,43 +49,51 @@ export default function Skills() {
                 >
                     Minhas <span className="text-PrimaryPurple"> habilidades. </span>
                 </motion.h1>
-            
-                    <motion.div
-                        className="flex gap-8 mt-10"
-                        initial="hidden"
-                        animate={isVisible ? "visible" : "hidden"}
-                        variants={containerVariants}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <SkillsIcon iconProp={faHtml5} />
-                        <SkillsIcon iconProp={faCss3Alt} />
-                        <SkillsIcon iconProp={faJs} />
-                        <SkillsIcon iconProp={faReact} />
-                        <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl h-44 w-44'>
-                            <SiTypescript className="text-[#f8f8ff] w-28 h-28" />
-                        </div>
-                        <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl h-44 w-44'>
-                            <RiTailwindCssFill className="text-[#f8f8ff] w-28 h-28" />
-                        </div>
+               
+                        <motion.div
+                            className="flex gap-5 mt-10 sm:gap-5 sm:flex sm:flex-col"
+                            initial="hidden"
+                            animate={isVisible ? "visible" : "hidden"}
+                            variants={containerVariants}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <div className='flex gap-5'>
+                                <SkillsIcon iconProp={faHtml5} />
+                                <SkillsIcon iconProp={faCss3Alt} />
+                                <SkillsIcon iconProp={faJs} />
+                            </div>
+                            <div className='flex gap-5'>
+                                <SkillsIcon iconProp={faReact} />
+                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
+                                    <SiTypescript className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
+                                </div>
+                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
+                                    <RiTailwindCssFill className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
+                                </div>
+                            </div>
+                        </motion.div>
+                        <motion.div
+                            className="flex gap-5 mt-5 justify-center sm:gap-5 sm:flex sm:flex-col"
+                            initial="hidden"
+                            animate={isVisible ? "visible" : "hidden"}
+                            variants={containerVariants}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                        >
+                            <div className='flex gap-5'>
+                                <SkillsIcon iconProp={faGitAlt} />
+                                <SkillsIcon iconProp={faNodeJs} />
+                                <SkillsIcon iconProp={faFigma} />
+                            </div>
+                            <div className='flex gap-5 sm:justify-center'>
+                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
+                                    <SiMysql className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
+                                </div>
+                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
+                                    <RiNextjsFill className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
+                                </div>
+                            </div>
                     </motion.div>
-
-                    <motion.div
-                        className="flex gap-8 mt-5"
-                        initial="hidden"
-                        animate={isVisible ? "visible" : "hidden"}
-                        variants={containerVariants}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                        <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl h-44 w-44'>
-                            <SiMysql className="text-[#f8f8ff] w-28 h-28" />
-                        </div>
-                        <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl h-44 w-44'>
-                            <RiNextjsFill className="text-[#f8f8ff] w-28 h-28" />
-                        </div>
-                        <SkillsIcon iconProp={faGitAlt} />
-                        <SkillsIcon iconProp={faNodeJs} />
-                        <SkillsIcon iconProp={faFigma} />
-                </motion.div>
+                </div>
             </div>
         </Element>
     );

@@ -6,10 +6,10 @@ import ContactMe from "./pages/ContactMe";
 export default function Main() {
   return (
     <div>
-        <Home />
+        
         <Skills />
-        <Projects />
-        <ContactMe />
+        
+       
     </div>
    
   );
