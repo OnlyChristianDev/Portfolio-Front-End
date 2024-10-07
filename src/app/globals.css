@@ -11,14 +11,3 @@ body {
 .dark body {
   background-color: #13131F;
 }
-
-
-.swiper-button-prev, .swiper-button-next {
-  color: white !important;
-  position: absolute;
-
-}
-
-.swiper-button-prev{
-  padding-right: 100px;
-}

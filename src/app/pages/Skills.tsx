@@ -1,13 +1,12 @@
 "use client";
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import SkillsIcon from "../components/SkillsIcon";
-import { faHtml5, faCss3Alt, faJs, faReact, faGitAlt, faNodeJs, faFigma } from "@fortawesome/free-brands-svg-icons";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiMysql, SiTypescript } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { DiHtml5, DiJsBadge, DiReact } from "react-icons/di";
+import { SiTypescript, SiTailwindcss, SiMysql, SiNextdotjs } from "react-icons/si";
+import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { Element } from 'react-scroll';
-
+import SkillsIcon from '../components/SkillsIcon';
+import { FaGitAlt, FaFigma } from "react-icons/fa6";
 export default function Skills() {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
@@ -18,7 +17,7 @@ export default function Skills() {
                 setIsVisible(true);
                 observer.disconnect();
             }
-        }, { threshold: 0.5 }); 
+        }, { threshold: 0.5 });
 
         if (ref.current) {
             observer.observe(ref.current);
@@ -38,10 +37,9 @@ export default function Skills() {
 
     return (
         <Element name="Skills">
-            <div ref={ref} className="flex flex-col justify-center items-center w-full h-[100vh]">
-            <div className='sm:w-[90vw] sm:flex sm:justify-center sm:items-center sm:flex-col'>
+            <div ref={ref} className="flex h-screen flex-col justify-center items-center w-full overflow-hidden">
                 <motion.h1
-                    className="text-5xl font-bold text-center dark:text-white sm:text-3xl"
+                    className="text-5xl font-bold text-center dark:text-white max-sm:text-[8vw] "
                     initial="hidden"
                     animate={isVisible ? "visible" : "hidden"}
                     variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -49,51 +47,25 @@ export default function Skills() {
                 >
                     Minhas <span className="text-PrimaryPurple"> habilidades. </span>
                 </motion.h1>
-               
-                        <motion.div
-                            className="flex gap-5 mt-10 sm:gap-5 sm:flex sm:flex-col"
-                            initial="hidden"
-                            animate={isVisible ? "visible" : "hidden"}
-                            variants={containerVariants}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='flex gap-5'>
-                                <SkillsIcon iconProp={faHtml5} />
-                                <SkillsIcon iconProp={faCss3Alt} />
-                                <SkillsIcon iconProp={faJs} />
-                            </div>
-                            <div className='flex gap-5'>
-                                <SkillsIcon iconProp={faReact} />
-                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
-                                    <SiTypescript className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
-                                </div>
-                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
-                                    <RiTailwindCssFill className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
-                                </div>
-                            </div>
-                        </motion.div>
-                        <motion.div
-                            className="flex gap-5 mt-5 justify-center sm:gap-5 sm:flex sm:flex-col"
-                            initial="hidden"
-                            animate={isVisible ? "visible" : "hidden"}
-                            variants={containerVariants}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <div className='flex gap-5'>
-                                <SkillsIcon iconProp={faGitAlt} />
-                                <SkillsIcon iconProp={faNodeJs} />
-                                <SkillsIcon iconProp={faFigma} />
-                            </div>
-                            <div className='flex gap-5 sm:justify-center'>
-                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
-                                    <SiMysql className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
-                                </div>
-                                <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
-                                    <RiNextjsFill className="text-[#f8f8ff] w-28 h-28 sm:max-h-[73px] sm:h-[24vw] sm:w-[24vw]" />
-                                </div>
-                            </div>
-                    </motion.div>
-                </div>
+                <motion.div
+                    className="flex flex-wrap justify-center gap-5 p-3"
+                    initial="hidden"
+                    animate={isVisible ? "visible" : "hidden"}
+                    variants={containerVariants}
+                    transition={{ duration: 0.5 }}
+                >
+                    <SkillsIcon Icon={DiHtml5} />
+                    <SkillsIcon Icon={IoLogoCss3} />
+                    <SkillsIcon Icon={DiJsBadge} />
+                    <SkillsIcon Icon={SiTypescript} />
+                    <SkillsIcon Icon={DiReact} />
+                    <SkillsIcon Icon={SiNextdotjs} />
+                    <SkillsIcon Icon={SiTailwindcss} />
+                    <SkillsIcon Icon={FaGitAlt} />
+                    <SkillsIcon Icon={IoLogoNodejs} />
+                    <SkillsIcon Icon={SiMysql} />
+                    <SkillsIcon Icon={FaFigma} />
+                </motion.div>
             </div>
         </Element>
     );

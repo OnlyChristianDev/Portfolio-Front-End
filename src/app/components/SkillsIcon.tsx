@@ -1,14 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { IconType } from "react-icons";
 
-interface SkillIcon {
-    iconProp : IconProp
+interface SkillsIconProps {
+  Icon: IconType;
 }
 
-export default function SkillsIcon( { iconProp } : SkillIcon ){
-    return(
-        <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl aspect-square w-44 sm:w-[26vw] sm:max-w-24'>
-            <FontAwesomeIcon className='w-32 h-32 text-[#f8f8ff] sm:max-w-20 sm:max-h-20 sm:h-[24vw] sm:w-[24vw]' icon={iconProp}/>
-        </div>
-    )
+export default function SkillsIcon({ Icon }: SkillsIconProps) {
+  return (
+      <div className='bg-PrimaryPurple shadow-2xl flex items-center justify-center rounded-tl-2xl rounded-br-2xl w-44 max-sm:bg-red-900 max-sm:w-24 max-md:w-32 max-lg:w-44 xl:w-48'>
+        <Icon size={150} color="white" className="w-full h-full p-3" />
+      </div>
+  );
 }

@@ -4,6 +4,7 @@ import animationData from "../../../animations/my-lottie-animation.json";
 
 export default function MyAnimatedIcon() {
   return (
-    <Lottie style={{ width: 500, height: 500 }} animationData={animationData}  />
+    <Lottie animationData={animationData} className="max-sm:hidden w-[500px] max-lg:w-[35vw] max-2xl:w-[33vw]" />
   );
 }
+ 

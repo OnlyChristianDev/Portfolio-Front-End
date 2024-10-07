@@ -52,7 +52,7 @@ export default function ContactMe() {
     return (
         <Element name="ContacMe">
             <motion.div 
-                className='w-full mt-16 h-screen flex flex-col items-center justify-center'
+                className='w-full h-screen flex flex-col items-center justify-center'
                 ref={ref}
                 initial="hidden"
                 animate={controls}
@@ -61,14 +61,13 @@ export default function ContactMe() {
                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                 }}
             >
-                <h1 className="text-5xl font-bold mb-10 dark:text-white">
+                <h1 className="max-sm:text-[8vw] text-5xl font-bold mb-10 dark:text-white">
                     Entre <span className="text-PrimaryPurple">em contato.</span>
                 </h1>
                 <div className="flex items-center justify-center gap-10">
-                    <div>
+                    <div className='max-sm:hidden max-md:hidden'>
                         <IconTalking />
                     </div>    
-                    <div className="flex flex-col">
                         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
                             <InputForm 
                                 type="text" 
@@ -85,7 +84,7 @@ export default function ContactMe() {
                                 onChange={handleChange}
                             />
                             <textarea 
-                                className="bg-transparent resize-none overflow-hidden border-2 h-80 w-[700px] rounded-md p-3 outline-none text-black dark:text-white" 
+                                className="bg-transparent resize-none overflow-hidden border-2 h-80 w-[700px] rounded-md p-3 outline-none text-black dark:text-white max-sm:w-[80vw] max-md:w-[80vw] max-lg:w-[55vw] max-2xl:w-[50vw]" 
                                 placeholder="Mensagem" 
                                 name="message"
                                 value={formData.message}
@@ -95,7 +94,6 @@ export default function ContactMe() {
                                 Enviar
                             </button>
                         </form>
-                    </div>
                 </div>
             </motion.div>
         </Element>

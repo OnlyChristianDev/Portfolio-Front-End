@@ -19,7 +19,7 @@ export default function Projects() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-5xl font-bold mb-10 dark:text-white">
+          <h1 className="text-5xl font-bold mb-10 dark:text-white max-sm:text-[8vw] ">
             Meus <span className="text-PrimaryPurple">projetos.</span>
           </h1>
         </motion.div>
@@ -56,13 +56,12 @@ export default function Projects() {
                   className={`hover:brightness-75 transition duration-700 w-full cursor-pointer flex flex-col gap-4 h-80 rounded-xl bg-gradient-to-r ${project.gradient} justify-center items-center shadow-xl p-6`}
                 >
                   <div>{project.icon}</div>
-                  <h2 className='text-white text-4xl font-bold'>{project.title}</h2>
-                  <p className='text-white text-lg text-center'>{project.description}</p>
+                  <h2 className='text-white text-center text-4xl font-bold max-sm:leading-tight max-sm:text-[6vw]'>{project.title}</h2>
+                  <p className='text-white text-lg text-center max-sm:text-[3vw] max-sm:leading-tight'>{project.description}</p>
                 </motion.div>
               </SwiperSlide>
             ))}
-          </Swiper>
-          
+          </Swiper>     
         </div>
       </div>
     </Element>
