@@ -7,6 +7,7 @@ import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { Element } from 'react-scroll';
 import SkillsIcon from '../components/SkillsIcon';
 import { FaGitAlt, FaFigma } from "react-icons/fa6";
+
 export default function Skills() {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
