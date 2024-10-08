@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import projects from "../components/projects"
+import projects from '@/components/projects';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { Element } from 'react-scroll';

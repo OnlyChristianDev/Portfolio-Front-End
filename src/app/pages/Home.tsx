@@ -2,8 +2,8 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ImageChristian from "../Images/Chris.jpg"
-import Texts from "../components/Texts"
-import SocialMedias from '../components/SocialMedias';
+import Texts from '@/components/Texts';
+import SocialMedias from '@/components/SocialMedias';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
