@@ -5,7 +5,7 @@ import { DiHtml5, DiJsBadge, DiReact } from "react-icons/di";
 import { SiTypescript, SiTailwindcss, SiMysql, SiNextdotjs } from "react-icons/si";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { Element } from 'react-scroll';
-import SkillsIcon from '../components/SkillsIcon';
+import SkillsIcon from '@/app/components/SkillsIcon';
 import { FaGitAlt, FaFigma } from "react-icons/fa6";
 
 export default function Skills() {

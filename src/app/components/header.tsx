@@ -2,8 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion"; 
 import ButtonDarkMode from "./buttonDarkMode";
-import { scrollToSkills, scrollToProjects, scrollToContactMe, ScrollToTopFunction } from "../utils/ScrollFunctions";
-
+import { scrollToSkills, ScrollToTopFunction, scrollToProjects, scrollToContactMe } from "@/app/utils/ScrollFunctions";
 export default function Header() {
     const [scrollY, setScrollY] = useState(0);
 

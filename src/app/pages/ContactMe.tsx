@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import IconTalking from "../components/IconTalking";
-import InputForm from "../components/InputForm";
+import InputForm from '@/app/components/InputForm';
 import { Element } from 'react-scroll';
 
 export default function ContactMe() {
