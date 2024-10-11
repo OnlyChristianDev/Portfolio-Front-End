@@ -49,7 +49,7 @@ export default function Skills() {
                     Minhas <span className="text-PrimaryPurple"> habilidades. </span>
                 </motion.h1>
                 <motion.div
-                    className="flex flex-wrap justify-center gap-5 p-3"
+                    className="flex pb-16 flex-wrap justify-center gap-5 mt-10"
                     initial="hidden"
                     animate={isVisible ? "visible" : "hidden"}
                     variants={containerVariants}

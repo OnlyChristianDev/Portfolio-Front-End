@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 export default function Projects() {
   return (
     <Element name="Projects">
-      <div className='w-full h-[100%] mt-52 flex flex-col items-center'>
+      <div className='w-full h-[100%] mt-40 flex flex-col items-center'>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
