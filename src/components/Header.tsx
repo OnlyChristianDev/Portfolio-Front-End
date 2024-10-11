@@ -63,7 +63,7 @@ export default function Header() {
                     {openBar && <Bar closeBar={OpenBarFunction} />}
                 </div>
                 <div className="left-4 absolute cursor-pointer sm:hidden z-50">
-                    <FaBars onClick={OpenBarFunction} />
+                    <FaBars className={"dark:text-white"} onClick={OpenBarFunction} />
                 </div>
                 <div className="absolute right-4">
                     <ButtonDarkMode />
