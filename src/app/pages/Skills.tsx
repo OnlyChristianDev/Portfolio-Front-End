@@ -38,7 +38,7 @@ export default function Skills() {
 
     return (
         <Element name="Skills">
-            <div ref={ref} className="flex h-screen flex-col justify-center items-center w-full overflow-hidden">
+            <div ref={ref} className="flex h-[100%] mt-52 flex-col items-center w-full justify-center overflow-hidden">
                 <motion.h1
                     className="text-5xl font-bold text-center dark:text-white max-sm:text-[8vw] "
                     initial="hidden"

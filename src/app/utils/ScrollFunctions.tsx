@@ -5,7 +5,9 @@ export const scrollToSkills = () => {
         duration: 1000,
         delay: 100,
         smooth: true, 
+        offset: -200 
       });
+      
 }
 
 export const scrollToProjects = () => {
@@ -13,6 +15,7 @@ export const scrollToProjects = () => {
         duration: 1000,
         delay: 100,
         smooth: true, 
+        offset: -200 
       });
 }
 
@@ -22,6 +25,7 @@ export const scrollToContactMe = () => {
         delay: 100,
         smooth: true, 
       });
+      
 }
 
 

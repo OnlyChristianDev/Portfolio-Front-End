@@ -13,6 +13,7 @@ const projects = [
         description: 'Um sistema web desenvolvido especialmente para gerenciar contatos telefônicos.',
         icon: <MdContacts className=' text-8xl text-white' />,
         gradient: 'from-green-500 to-blue-500',
+        link: "https://gerenciador-de-contatos-six.vercel.app/"
     },
     {
         title: (
@@ -23,24 +24,28 @@ const projects = [
         description: 'Sistema web para calcular o índice de massa corpórea dos usuários.',
         icon: <CiCalculator2 className='text-8xl text-white' />,
         gradient: 'from-purple-500 to-pink-500',
+        link: "https://gerenciador-de-contatos-six.vercel.app/"
     },
     {
         title: 'Quiz interativo',
         description: 'Quiz interativo com perguntas acerca da linguagem de programação JavaScript.',
         icon: <MdQuiz className='text-8xl text-white' />,
         gradient: 'from-yellow-500 to-red-500',
+        link: "https://gerenciador-de-contatos-six.vercel.app/"
     },
     {
         title: 'Virtual-R',
         description: 'Site desenvolvido com React e Tailwind CSS. Projetado para ser visualmente atraente e funcional em diversos dispositivos e tamanhos de tela.',
         icon: <FaLaptopCode className='text-8xl text-white' />,
         gradient: 'from-red-500 to-red-900',
+        link: "https://gerenciador-de-contatos-six.vercel.app/"
     },
     {
         title: 'Weather Project',
         description: 'Aplicação web que exibe a previsão do tempo para uma localização específica. Desenvolvido com HTML, CSS e JavaScript, utiliza uma API para obter dados meteorológicos.',
         icon: <TiWeatherDownpour className='text-8xl text-white' />,
         gradient: 'from-blue-500 to-indigo-500',
+        link: "https://gerenciador-de-contatos-six.vercel.app/"
     }
 ];
 

@@ -20,7 +20,7 @@ const itemVariants = {
 export default function Home() {
   return (
     <motion.div 
-      className='w-full h-screen mt-4 min-h-screen flex flex-col items-center justify-center'
+      className='w-full h-[100%] mt-32 flex flex-col items-center justify-center'
       initial="hidden"
       animate="visible"
       variants={containerVariants}

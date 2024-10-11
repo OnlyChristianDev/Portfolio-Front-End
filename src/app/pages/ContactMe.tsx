@@ -52,7 +52,7 @@ export default function ContactMe() {
     return (
         <Element name="ContacMe">
             <motion.div 
-                className='w-full h-screen flex flex-col items-center justify-center'
+                className='w-full h-[100%] mt-52 mb-10 flex flex-col items-center'
                 ref={ref}
                 initial="hidden"
                 animate={controls}

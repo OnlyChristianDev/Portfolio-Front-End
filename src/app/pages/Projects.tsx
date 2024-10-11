@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 export default function Projects() {
   return (
     <Element name="Projects">
-      <div className='w-full h-screen flex flex-col items-center justify-center'>
+      <div className='w-full h-[100%] mt-52 flex flex-col items-center'>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,9 +55,11 @@ export default function Projects() {
                   transition={{ duration: 0.5 }}
                   className={`hover:brightness-75 transition duration-700 w-full cursor-pointer flex flex-col gap-4 h-80 rounded-xl bg-gradient-to-r ${project.gradient} justify-center items-center shadow-xl p-6`}
                 >
-                  <div>{project.icon}</div>
-                  <h2 className='text-white text-center text-4xl font-bold max-sm:leading-tight max-sm:text-[6vw]'>{project.title}</h2>
-                  <p className='text-white text-lg text-center max-sm:text-[3vw] max-sm:leading-tight'>{project.description}</p>
+                  <a target='_blank' href={project.link}>
+                    <div className='flex items-center justify-center'>{project.icon}</div>
+                    <h2 className='text-white text-center text-4xl font-bold max-sm:leading-tight max-sm:text-[6vw]'>{project.title}</h2>
+                    <p className='text-white text-lg text-center max-sm:text-[3vw] max-sm:leading-tight'>{project.description}</p>
+                  </a>
                 </motion.div>
               </SwiperSlide>
             ))}
