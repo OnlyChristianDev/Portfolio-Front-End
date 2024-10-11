@@ -21,6 +21,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="pt-br" className={`${poppins.className}`}>
+      <head>
+        <link rel="icon" href="/icons.png" />
+      </head>
       <body>
         <div>
         <Header />
