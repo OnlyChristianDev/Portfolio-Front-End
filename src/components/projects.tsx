@@ -2,6 +2,7 @@ import { MdContacts, MdQuiz } from 'react-icons/md';
 import { CiCalculator2 } from 'react-icons/ci';
 import { FaLaptopCode } from 'react-icons/fa';
 import { TiWeatherDownpour } from 'react-icons/ti';
+import { FaShoppingBag } from "react-icons/fa";
 
 const projects = [
     {
@@ -14,6 +15,17 @@ const projects = [
         icon: <MdContacts className=' text-8xl text-white' />,
         gradient: 'from-green-500 to-blue-500',
         link: "https://gerenciador-de-contatos-six.vercel.app/"
+    },
+    {
+        title: (
+            <>
+                RETROVE
+            </>
+        ),
+        description: 'Retrove é uma plataforma de e-commerce fictícia que permite aos usuários vender itens usados,',
+        icon: <FaShoppingBag className='text-8xl text-white' />,
+        gradient: 'from-gray-500 to-black',
+        link: "https://retrove.vercel.app/"
     },
     {
         title: (
