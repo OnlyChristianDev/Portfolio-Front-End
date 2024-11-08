@@ -19,7 +19,8 @@ Sou um desenvolvedor de software apaixonado por criar soluções eficientes e in
 - **Linguagens de Marcação**: HTML, CSS
 - **Bibliotecas CSS**: Sass, Tailwind.css
 - **Frameworks e Bibliotecas**: React, Framer Motion, Next
-- **Ferramentas**: Git, GitHub, VS Code
+- **Ferramentas**: Git, GitHub, VS Code, Node
+- **Banco de dados**: MySql
 
 ## Educação
 
