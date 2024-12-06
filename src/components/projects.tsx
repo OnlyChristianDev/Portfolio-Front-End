@@ -3,6 +3,7 @@ import { CiCalculator2 } from 'react-icons/ci';
 import { FaLaptopCode } from 'react-icons/fa';
 import { TiWeatherDownpour } from 'react-icons/ti';
 import { FaShoppingBag } from "react-icons/fa";
+import { GiCardJoker } from "react-icons/gi";
 
 const projects = [
     {
@@ -58,6 +59,13 @@ const projects = [
         icon: <TiWeatherDownpour className='text-8xl text-white' />,
         gradient: 'from-blue-500 to-indigo-500',
         link: "https://weather-project-inky-two.vercel.app/"
+    },
+    {
+        title: 'Jokes Card',
+        description: 'Este é um projeto que apresenta um sistema interativo de cartas que exibem piadas e suas respostas. Ao clicar nas cartas, elas giram, revelando a piada ou a resposta no verso.',
+        icon: <GiCardJoker className='text-8xl text-white' />,
+        gradient: 'from-pink-900 to-blue-900',
+        link: "https://jokes-card.vercel.app/"
     }
 ];
 
