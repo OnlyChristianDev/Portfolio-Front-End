@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Portfólio de Desenvolvedor
 
-## Getting Started
+Bem-vindo ao meu portfólio de desenvolvedor! Este repositório contém uma coleção dos meus projetos e habilidades na área de desenvolvimento de software.
 
-First, run the development server:
+## Índice
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Sobre Mim](#sobre-mim)
+- [Habilidades](#habilidades)
+- [Educação](#educação)
+- [Contato](#contato)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sobre Mim
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sou um desenvolvedor de software apaixonado por criar soluções eficientes e inovadoras. Tenho experiência em desenvolvimento front-end, com foco em criar interfaces de usuário interativas e responsivas.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Habilidades
 
-## Learn More
+- **Linguagens de Programação**: JavaScript, TypeScript
+- **Linguagens de Marcação**: HTML, CSS
+- **Bibliotecas CSS**: Sass, Tailwind.css
+- **Frameworks e Bibliotecas**: React, Framer Motion, Next
+- **Ferramentas**: Git, GitHub, VS Code, Node
+- **Banco de dados**: MySql
 
-To learn more about Next.js, take a look at the following resources:
+## Educação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Curso de Ciência da Computação
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Instituição: Uninter
 
-## Deploy on Vercel
+Período: 03
+Início: Fev/2024 - 2028
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contato
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email**: [Christiandeveloper123@gmail.com](mailto:Christiandeveloper123@gmail.com)
+- **LinkedIn**: [Christian Gabriel](https://www.linkedin.com/in/christiangdev/)
