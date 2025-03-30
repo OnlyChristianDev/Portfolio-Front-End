@@ -2,11 +2,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { DiHtml5, DiJsBadge, DiReact } from "react-icons/di";
-import { SiTypescript, SiTailwindcss, SiMysql, SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiMysql, SiNextdotjs  } from "react-icons/si";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import { Element } from 'react-scroll';
+import { IoLogoVue } from "react-icons/io5";
 import SkillsIcon from '@/components/SkillsIcon';
-import { FaGitAlt, FaFigma } from "react-icons/fa6";
+import { FaWordpress } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
 
 export default function Skills() {
     const [isVisible, setIsVisible] = useState(false);
@@ -73,11 +75,11 @@ export default function Skills() {
                         <div className='flex gap-5'>
                             <SkillsIcon Icon={IoLogoNodejs} />
                             <SkillsIcon Icon={SiMysql} />
+                            <SkillsIcon Icon={IoLogoVue} />
                         </div>
                         <div className='flex items-center justify-center max-sm:mt-5'>
-                            <SkillsIcon Icon={FaFigma} />
+                            <SkillsIcon Icon={FaWordpress} />
                         </div>
-                       
                     </div>
                 </motion.div>
             </div>
